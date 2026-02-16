@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container-head {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #25343F;
+}
+
+.logo-name a {
+    color: #EAEFEF;
+    text-decoration: none;
+    font-family: "Archivo Black", sans-serif;
+    margin-left: 10%;
+}
+
+.nav-container {
+
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    margin: 0;
+    padding: 5px;
+}
+
+.nav-item {
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+ul li a {
+    color: #EAEFEF;
+    text-decoration: none;
+
+}
+
+.button a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.button {
+    align-self: center;
+    justify-self: center;
+    padding: 5px 25px 5px 25px;
+
+    background-color: #FF9B51;
+
+}
+
+.button:hover {
+    background-color: #fa7c1c;
+}
+
+
+footer {
+    width: 100%;
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #25343F;
+}
+
+
+.footer-container ul li {
+    list-style-type: none;
+}
+
+.footer-container p {
+    color: #EAEFEF;
+}
