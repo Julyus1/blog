@@ -10,7 +10,28 @@
 
 <body>
     <%- include("partials/header.ejs") %>
-        <h1>Welcome to the home page!</h1>
+
+        <div class="main">
+            <div class="post-container">
+                <% if(posts.length>0){ %>
+                    <% posts.forEach(post=>{ %>
+                        <div class="card" style="width: 30rem; padding:20px; margin-bottom:15px; height:max-content;">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <%= post.title %>
+                                </h5>
+                                <br>
+                                <p class="card-text">
+                                    <%=post.blogPost %>.
+                                </p>
+                            </div>
+                        </div>
+                        <% }) %>
+                            <% } else{ %>
+                                <h1>No post yet</h1>
+                                <% } %>
+            </div>
+        </div>
 
 
 </body>
